@@ -3,10 +3,6 @@ Name = new Object();
 Name.Vorname="Martin";
 Name.Nachname="Schwarzmaier";
 
-
-document.getElementById("output").
-document.getElementById("output").innerHTML="blabla mr "+Name.Nachname;
-
 function onClickTextField(id){
 	object = document.getElementById(id);
 	object.style.backgroundColor= "red";
@@ -14,3 +10,13 @@ function onClickTextField(id){
 		object.style.backgroundColor = "blue";
 	}
 }
+ function onChangeListener(id){
+    object = document.getElementById(id);
+    if (object.value=="orange"){
+        object.style.backgroundColor = "orange";
+    }
+    else
+                object.style.backgroundColor = "white";
+       
+}
+
