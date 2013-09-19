@@ -17,6 +17,16 @@ function onClickTextField(id){
     }
     else
                 object.style.backgroundColor = "white";
-       
 }
-
+$(document).ready(function(){
+    $(".hideable").hide();
+    });
+$(document).ready(function(){
+    $("#squaresContainer").animate(
+        function(){
+            width: 80px;
+            height: 80px;
+        },
+        fast
+    )});
+  
