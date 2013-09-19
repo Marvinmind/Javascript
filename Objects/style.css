@@ -1,6 +1,40 @@
 #squaresContainer{
-	width: 40px;
-	height: 40px;
-	background-color: blue;
+	width: 400px;
+	height: 400px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
 	font-family: Courier;
+		position: relative;
+
 }
+div.squaresInline{
+	width: 50%;
+	height: 50%;
+border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	float: left;
+}
+#topleft{
+float: left;
+position: absolute;
+background-color: green;
+}
+#topright{
+	right: 0;
+	position: absolute;
+	background-color: blue;
+}
+#bottomleft{
+	bottom: 0;
+	position: absolute;
+	background-color: yellow;
+}
+#bottomright{
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-color: red;
+}
+	

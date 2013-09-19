@@ -21,12 +21,27 @@ function onClickTextField(id){
 $(document).ready(function(){
     $(".hideable").hide();
     });
+
 $(document).ready(function(){
-    $("#squaresContainer").animate(
-        function(){
-            width: 80px;
-            height: 80px;
-        },
-        fast
-    )});
+
+$(".squaresInline").hover(function(){
+    $(this).filter(':not(:animated)').animate(
+        {
+            width: '100%',
+            height: '100%',
+        });
+        $(this).css('z-index', '2');
+    },
+    function(){
+        $(this).animate(
+        {
+            width: '50%',
+            height: '50%',
+        },function(){
+            $(this).css('z-index', '1');
+        });
+        
+
+    });
+});
   
